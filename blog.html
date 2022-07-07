@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/navBar.css">
+    <style>
+        .blogContent {
+            background-color: rgba(9, 28, 29, 0.8);
+            margin-top: 10px;
+            height: 450px;
+            border-radius: 10px;
+        }
+        h1{
+            color: whitesmoke;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 30px 0px 0px 350px; /* Defining the space between image border inside body to the edge*/
+            padding-top: 10px;
+        }
+        p{
+            color: whitesmoke;
+            text-align: center; /* Aligning text to centre*/
+            margin: 20px 270px 0px 300px;
+        }
+        th,td {
+            color: whitesmoke;
+        }
+        footer {
+            background-color: rgba(9, 28, 29, 0.8);
+            bottom: 0;
+            width: 100%;
+            margin-top: 50px;
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navBar">  
+        <a href="home.html">HOME</a>
+        <a href="product.html">PRODUCT</a>
+        <a class="active" href="blog.html">BLOG</a>
+        <a href="research.html">RESEARCH</a>
+        <a href="contactUs.html">CONTACT US</a>
+        <p id="demo" style="color: white; float: right; margin-right: 100px;"></p>
+    </div>
+    
+    <div class= "blogContent" >
+        <h1>Effects of Technologies on Daily Lives</h1> <!--This is heading-->
+        <p>Technology plays an important role in society today. The internet and cell phones are some common examples. Technology affects the way individuals think, learn and communicate. It has positive and negative effects on the world and it impacts daily lives.</p>
+        <!--Defining table-->
+        <table style="width: 80%; margin: 20px 0px 0px 150px;">
+            <tr> <!--Defining table row-->
+                <th>Positive Effects</th> <!--Defining table head-->
+                <th>Negative Effects</th>
+            </tr>
+            <tr style="text-align: justify;"> 
+                <td style="padding-right: 10px;"> <!--Defining table data-->
+                    Business practices have vastly improved and developed as a result of technical breakthroughs. Technology has drastically simplified the employment process, which is one of the most basic components of running a business.
+                    Thanks to the use of automated software tools, corporate executives may collect and assess data in real time, which can then be displayed and sent out as reports as needed.
+                    On the consumer side, technological advancements like as the credit card and the rise of e-commerce have made it easier than ever for firms to sell products and services to clients when and when they want them.
+                    Transportation technology is changing as well. The bullet train, which transports passengers approximately six times faster than a standard train, is the consequence of recent technology developments.
+                    Ordinary cleaning tasks can now be completed without the need of a washing machine or dishwasher. IoT (Internet of Things) technology has recently enabled homes to link all of their electrical devices to a single network, allowing users to control them remotely using their smartphones.
+                </td>
+                <td style="padding-left: 10px;">
+                    When we use electronics like phones, computers, and tablets, we don't hold ourselves in a healthy way.
+                    Poor posture can lead to a variety of physical and psychological issues, including low self-esteem and mood, diminished assertiveness and productivity, and a greater inclination to recall unfavorable events.
+                    Excessive device use, according to the Mayo Clinic, can tire our eyes and cause eye strain, resulting in headaches, difficulty concentrating, and watery, dry, itchy, burning, stinging, or fatigued eyes.
+                    Overuse can cause blurry or double vision, as well as increased sensitivity to light.
+                    Technology is addictive, and people are finding it increasingly difficult to detach from it. The average American adult spends more than 11 hours each day online, according to psychologist Doreen Dodgen-Magee, who wrote a column for The Washington Post.
+                    She claimed that technology addiction should be classified as a medical condition. Young people's ability to read body language and nuance in face-to-face interactions is another social skill that technology is eroding.
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <p style="color: white;" text-align: center;>Posted By: Success Bartaula <br> Email: np01cp4s210236@islingtoncollege.edu.np </p>
+    </footer>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d;
+    </script>
+    
+</body>
+</html>

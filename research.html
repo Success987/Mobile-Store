@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/navBar.css">
+    <style>
+        .tablesCollection {
+            background-color: rgba(9, 28, 29, 0.8);
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        table{
+          width: 400px;
+          border: 3px solid black; /* defining border width, style and colour*/
+          border-color: white;
+          border-collapse: collapse; /* collapsing borders*/
+          margin: 30px 0px 0px 150px;
+        }
+        th{
+          border: 2px solid orange;
+          color: orange;
+        }
+        td{
+          border: 1px solid orange;
+          color: white;
+        }
+        img{
+          padding: 5px; /* Defining space between border and element*/
+        }
+        .back-to-top{
+          text-decoration: none;
+          width: 100px; /* Defining width of the element*/
+          border: 2px solid orange;
+          padding: 5px;
+          background-color: rgb(83, 81, 81);
+          margin: 100px 0px 0px 630px;
+          color: white;
+        }
+        footer {
+            background-color: rgba(9, 28, 29, 0.8);
+            
+            bottom: 0;
+            width: 100%;
+            margin-top: 10px;
+            padding: 1px;
+        }
+      </style>
+</head>
+<body>
+
+    <div class="navBar">  
+        <a href="home.html">HOME</a>
+        <a href="product.html">PRODUCT</a>
+        <a href="blog.html">BLOG</a>
+        <a class="active" href="research.html">RESEARCH</a>
+        <a href="contactUs.html">CONTACT US</a>
+        <p id="demo" style="color: white;"></p>
+    </div>
+    <div class="tablesCollection">
+      <table> <!--Defining table-->
+        <tr>
+          <th colspan="2">Research-1</th> <!--Defining table head-->
+        </tr>
+        <tr>
+          <td><img src="IMAGES/research1.png" alt="research1" width="500px" height="400px"></td>
+          <td><img src="IMAGES/myresearch1.png" alt="myreference1" width="500px" height="400px"></td>
+        </tr>
+        <tr>
+          <td>Referenced web page from w3schools</td>
+          <td>I took an idea for navigation bar</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th colspan="2">Research-2</th>
+        </tr>
+        <tr>
+          <td><img src="IMAGES/research2.png" alt="research2" width="500px" height="400px"></td>
+          <td><img src="IMAGES/myresearch2.png" alt="myreference2" width="500px" height="400px"></td>
+        </tr>
+        <tr>
+          <td>Referenced web page from w3schools</td>
+          <td>I took an idea for image slideshow</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th colspan="2">Research-3</th>
+        </tr>
+        <tr>
+          <td><img src="IMAGES/research3.png" alt="research3" width="500px" height="400px"></td>
+          <td><img src="IMAGES/myResearch3.png" alt="myreference3" width="500px" height="400px"></td>
+        </tr>
+        <tr>
+          <td>Referenced web page from random google search</td>
+          <td>I took an idea for the structure of blog page</td>
+        </tr>
+      </table>
+      <table> 
+        <tr>
+          <th colspan="2">Research-4</th>
+        </tr>
+        <tr>
+          <td><img src="IMAGES/research5.png" alt="research5" width="500px" height="400px"></td>
+          <td><img src="IMAGES/myResearch4.png" alt="myreference5" width="500px" height="400px"></td>
+        </tr>
+        <tr>
+          <td>Referenced web page from random google search</td>
+          <td>I took an idea for the struture of contact page</td>
+        </tr>
+      </table>
+      <br>
+      <a class="back-to-top" href="research.html">Back to top</a> <!--using anchor tag to make link-->
+    </div>
+    <footer>
+        <p style="color: white; text-align: center;">Posted By: Success Bartaula <br> Email: np01cp4s210236@islingtoncollege.edu.np </p>
+        
+    </footer>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d;
+    </script>
+    
+</body>
+</html>

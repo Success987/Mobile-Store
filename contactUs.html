@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/navBar.css">
+    <script src="JAVASCRIPT/form.js"></script>
+    <style>
+        h1{
+          color: whitesmoke;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 50px;
+          margin: 30px 0px 0px 300px; /* Defining the space between image border inside body to the edge*/
+        }
+        .form {
+          width: 940px; /* Defining width of the form*/
+          border-radius: 10px;
+          background-color: rgba(9, 28, 29, 0.8);
+          margin: 20px 0px 0px 200px;
+        }
+        form {
+            margin-top: 10px;
+            margin-left: 200px;
+            padding-bottom: 20px;
+        }
+        input{
+          width: 500px; /* Defining width of the input field*/
+          border: none;
+          border-radius: 4px;
+          padding: 15px;
+          margin: 8px 0;
+        }
+        textarea {
+          border: none;
+          border-radius: 4px;
+          margin: 8px 0;
+        }
+        .submit{
+          width: 300px; /* Defining width of button*/
+          border: none;
+          border-radius: 4px;
+          padding: 15px;
+          margin-top: 8px;
+          margin-left: 120px;
+        }
+        footer {
+            background-color: rgba(9, 28, 29, 0.8);
+            bottom: fixed;
+            width: 100%;
+            margin-top: 10px;
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navBar">  
+        <a href="home.html">HOME</a>
+        <a href="product.html">PRODUCT</a>
+        <a href="blog.html">BLOG</a>
+        <a href="research.html">RESEARCH</a>
+        <a class="active" href="contactUs.html">CONTACT US</a>
+        <p id="demo" style="color: white;"></p>
+    </div>
+
+    
+    <div class="form">
+        <h1>Contact Us</h1>
+        <!-- Creating form-->
+        <form name="contactForm" onsubmit="validateForm()" method="post">
+            <input type="text" placeholder="Name" name="name"> <!-- defining input type, creating field-->
+            <br>
+            <input type="email" placeholder="Email Address" name="email">
+            <br>
+            <input type="text" placeholder="Subject" name="subject">
+            <br>
+            <textarea rows="8" cols="70" placeholder="Your message" name="message"></textarea> <!-- Defining text area-->
+            <br>
+            <input class= "submit" type="submit" value="Submit" style = "background-color: khaki;"> <!-- Inline css use-->
+        </form>
+    </div>
+    <footer>
+      <p style="color: white; text-align: center;">Posted By: Success Bartaula <br> Email: np01cp4s210236@islingtoncollege.edu.np </p>
+      
+  </footer>
+  <script>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d;
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/navBar.css">
+    <style>
+        .aboutShop {
+            background-color: rgba(9, 28, 29, 0.8);
+            margin-top: 5px;
+            border-radius: 10px;
+        }
+        img {
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: orange;
+        }
+        footer {
+            background-color: rgba(9, 28, 29, 0.8);
+            bottom: 0;
+            width: 100%;
+            margin-top: 10px;
+            padding: 1px;
+        }
+        h1 {
+            color: orange;
+            margin-left: 90px;
+            font-size: 40px;
+        }
+        li {
+          color: orange;
+          font-size: 30px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="navBar">  
+        <a class="active" href="home.html">HOME</a>
+        <a href="product.html">PRODUCT</a>
+        <a href="blog.html">BLOG</a>
+        <a href="research.html">RESEARCH</a>
+        <a href="contactUs.html">CONTACT US</a>
+        <p id="demo" style="color: white;"></p>
+    </div>
+    <div class="aboutShop" style="height:500px; width: 1000px;">
+        <img src="IMAGES/shopPhoto.png" alt="Shop Photo"/> 
+        <h1>Welcome To Our Shop</h1>>
+        <ul> 
+            <li>Name: Success Mobile Shop</li>
+            <li>Phone Number: <br> +977 9862512260</li>
+            <li>Email: successmobileshop@gmail.com</li>
+            <li>Location: Kamalpokhari, Kathmandu</li>
+            <li>Service: This is a mobile phone store</li>
+          </ul>
+       
+    </div>
+    <footer>
+        <p style="color: white; text-align: center;">Posted By: Success Bartaula <br> Email: np01cp4s210236@islingtoncollege.edu.np </p>
+        
+    </footer>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d;
+    </script>
+    
+</body>
+</html>

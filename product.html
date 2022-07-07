@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/navBar.css">
+    <style>
+        * {box-sizing: border-box}
+        
+        .product {
+            display: none;
+            padding: 20px;
+            margin-left: 10px;
+        }
+        img {vertical-align: middle;}
+
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin-top: 20px;
+          margin-left: 100px;
+          background-color: rgba(9, 28, 29, 0.8);
+          border-style: solid;
+          border-color: orange;
+          border-width: 2px;
+          border-radius: 10px;
+          height: 475px;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: greenyellow;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: orange;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+
+        img {
+          border-radius: 10px;
+          border-style: inset;
+          border-color: black;
+
+        }
+        h1 {
+          display: block;
+          color: orange;
+          font-size: 50px;
+          margin-top: -400px;
+          margin-left: 400px;
+          
+          
+        }
+        footer {
+            background-color: rgba(9, 28, 29, 0.8);
+            bottom: 0;
+            width: 100%;
+            margin-top: 5px;
+            padding: 1px;
+        }
+        ul{
+          
+          margin-left: 400px;
+        }
+        li {
+          color: orange;
+        }
+        #cart {
+          margin-left: 425px;
+          margin-top: 50px;
+          padding: 10px;
+          background-color: green;
+          color: white;
+          width: 200px;
+          text-align: center;
+        }
+        #cart:hover {
+          font-size: 20px;
+        }
+        #cart:active {
+          color: orange;
+        }
+    </style>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("product");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slides[slideIndex-1].style.display = "block";
+        }
+        </script>
+</head>
+<body>
+    <div class="navBar" style="margin-top: 10px;">  
+        <a href="home.html">HOME</a>
+        <a class="active" href="product.html">PRODUCT</a>
+        <a href="blog.html">BLOG</a>
+        <a href="research.html">RESEARCH</a>
+        <a href="contactUs.html">CONTACT US</a>
+        <p id="demo" style="color: white;"></p>
+    </div>
+    <div class="slideshow-container">
+        <div class="product">
+          <img src="IMAGES/samsungM32.png" style="height: 420px; width:500 px;">
+          <h1>SAMSUNG M32</h1>
+          <ul> 
+            <li>Released 2021, June 28</li>
+            <li>180g (Global) / 196g (India), 8.4mm thickness</li>
+            <li>Android 11, One UI 3.1</li>
+            <li>64GB/128GB storage, microSDXC</li>
+            <li>Price: RS 28000</li>
+          </ul>
+          <p id="cart">Add To Cart</p>
+        </div>
+        <div class="product">
+          <img src="IMAGES/iphone6s.png" style="height: 350px; width:500 px;">
+          <h1 style="margin-top: -330px;">IPHONE 6S</h1>
+          <ul> 
+            <li>Released 2015, September 25</li>
+            <li>143g, 7.1mm thickness</li>
+            <li>IOS 9, up to iOS 15.5</li>
+            <li>16GB/32GB/128GB storage, no card slot</li>
+            <li>Price: RS 90000</li>
+          </ul>
+          <p id="cart">Add To Cart</p>
+        </div>
+        <div class="product">
+          <img src="IMAGES/oppoF17.png" style="height: 420px; width:500 px;">
+          <h1>OPPO F17</h1>
+          <ul> 
+            <li>Released 2020, September 24</li>
+            <li>163g, 7.5mm thickness</li>
+            <li>Android 10, ColorOS 7.2</li>
+            <li>64GB/128GB storage, microSDXC</li>
+            <li>Price: RS 35000</li>
+          </ul>
+          <p id="cart">Add To Cart</p>
+        </div>
+        <div class="product">
+            <img src="IMAGES/huawiP50.png" style="height: 420px; width: 300px; margin-left: 20px;">
+            <h1>HUAWI P50</h1>
+            <ul> 
+              <li>Released 2021, August 12</li>
+              <li>195g, 8.5mm thickness</li>
+              <li>HarmonyOS 2.0, EMUI 12</li>
+              <li>128GB/256GB/512GB storage, NM</li>
+              <li>Price: RS 10000</li>
+            </ul>
+            <p id="cart">Add To Cart</p>
+        </div>
+        <div class="product">
+            <img src="IMAGES/redmiNote8.png" style="height: 420px; width:500 px;">
+            <h1>REDMI NOTE 8</h1>
+            <ul> 
+              <li>Released 2019, October 16</li>
+              <li>190, 8.4mm thickness</li>
+              <li>Android 9.0, up to Android 10, MIUI 12</li>
+              <li>32GB/64GB/128GB storage, microSDXC</li>
+              <li>Price: RS 24000</li>
+            </ul>
+            <p id="cart">Add To Cart</p>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <footer>
+        <p style="color: white; text-align: center;">Posted By: Success Bartaula <br> Email: np01cp4s210236@islingtoncollege.edu.np </p>
+    </footer>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d;
+    </script>
+</body>
+</html>
